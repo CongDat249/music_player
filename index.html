@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- DASHBOARD -->
+        <div class="dashboard">
+            <div class="song">
+                <div class="song-thumbnail">
+                    <img src="assets/images/song1.png" alt="" >
+                </div>
+                <div class="song-info">
+                    <span class="song-title">Perfect</span>
+                    <i class="far fa-heart icon-heart"></i>
+                    <p class="song-artist">Ed Sheeran</p>
+                    <audio class="audio" src="assets/music/song10.mp3"></audio>
+                </div>
+                <div class="slider-block">
+                    <input type="range" min="0" max="100" value="0" class="slider">
+                    <div class="time">
+                        <span class="time-played">0:00</span>
+                        <span class="time-left">10:00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="control">
+                <button class="btn btn-shuffle">
+                    <i class="fas fa-random"></i>
+                </button>   
+                <button class="btn btn-prev">
+                    <i class="fas fa-backward"></i>
+                </button>   
+                <button class="btn btn-toggle-play">
+                    <i class="fas fa-play icon-play"></i>
+                </button>   
+                <button class="btn btn-next">
+                    <i class="fas fa-forward"></i>
+                </button>   
+                <button class="btn btn-repeat">
+                    <i class="fas fa-redo-alt"></i>
+                </button>   
+            </div>
+        </div>
+
+        <!-- PLAYLIST -->
+        <div class="playlist">
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
